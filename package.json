@@ -1,0 +1,20 @@
+{
+  "name": "issue",
+  "version": "1.0.0",
+  "description": "",
+  "sideEffects": ["./src/index.ts"],
+  "scripts": {
+    "prebuild": "tsc -p src --outDir dist",
+    "build": "webpack",
+    
+    "pretest": "npm run build",
+    "test": "node dist/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
+}
