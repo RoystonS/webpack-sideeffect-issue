@@ -4,6 +4,6 @@ module.exports = {
 
   optimization: {
     sideEffects: true,
-    namedModules: false,
+    moduleIds: 'named',
   },
 };
